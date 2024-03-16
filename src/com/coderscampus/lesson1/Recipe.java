@@ -35,11 +35,11 @@ public class Recipe {
 
 	@Override
 	public String toString() {
-		return "Recipe [name=" + name + ", instructions=" + instructions + getPrice() +"]";
+		return "Recipe name: " + name + "\nInstructions:\n" + instructions + getPrice();
 	}
 	private String getPrice() {
-		String priceString = priceOpt.map(price -> ", price=" + price)
-				                                      .orElse(", price=free");
+		String priceString = priceOpt.map(price -> "Price = " + price)
+				                                      .orElse("Price = free");
 		return priceString;
 	}
 }
