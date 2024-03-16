@@ -1,5 +1,6 @@
 package com.coderscampus.lesson1;
 
+import java.math.BigDecimal;
 import java.util.Optional;
 
 public class OptionalApplication {
@@ -15,7 +16,7 @@ public class OptionalApplication {
 		Recipe cookies = new Recipe();
 		cookies.setName("Chocolate Chip Cookies");
 		cookies.setInstructions("1. Preheat oven\n2. Put dough on baking sheets\n3. Cook dough for 15 minutes");
-	
+	    cookies.setPriceOpt(new BigDecimal(9.99));
 		System.out.println(cookies);
 	}
 
